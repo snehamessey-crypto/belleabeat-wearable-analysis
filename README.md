@@ -1,6 +1,3 @@
-### Bellabeat Consumer Wellness Analytics
-
-```markdown
 # Bellabeat Consumer Wellness Analytics: Smart Device Usage Case Study
 
 [![Tools](https://img.shields.io/badge/Tools-Excel%20%7C%20MySQL%20%7C%20Python%20%7C%20Power%20BI-blue)](#tech-stack--workflow)
