@@ -51,13 +51,15 @@ Leadership seeks to identify how consumers utilize non-Bellabeat smart fitness d
 ## Repository Structure
 ```text
 ├── data/
-│   └── fitbit_daily_activity.csv     # Cleaned telemetry dataset
+│   └── dailyActivity_merged.csv          # Cleaned telemetry dataset
+|   └── sleepDay_merged.csv
 ├── sql/
-│   └── bellabeat_transformations.sql # Data cleaning & segmentation queries
+│   └── exploratory_analysis.sql          # Data cleaning & segmentation queries
 ├── python/
-│   └── bellabeat_eda.ipynb           # Python notebooks for EDA and correlations
+│   └── bellabeat_eda_modeling.ipynb      # Python notebooks for EDA and correlations
 ├── pbix/
-│   └── bellabeat_dashboard.pbix      # Power BI dashboard file
+│   └── bellabeat_executive_summary.pbix  # Power BI dashboard file
 ├── docs/
-│   └── executive_overview.png        # High-resolution dashboard screenshot
+│   └── executive_overview.png            # High-resolution dashboard screenshot
+|   └── sleep_activity_drilldown.png      # Tableau dashboard screenshot
 └── README.md
