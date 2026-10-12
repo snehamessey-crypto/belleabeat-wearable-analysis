@@ -1,6 +1,6 @@
 # Bellabeat Consumer Wellness Analytics: Smart Device Usage Case Study
 
-[![Tools](https://img.shields.io/badge/Tools-Excel%20%7C%20MySQL%20%7C%20Python%20%7C%20Power%20BI-blue)](#tech-stack--workflow)
+[![Tools](https://img.shields.io/badge/Tools-Excel%20%7C%20MySQL%20%7C%20Python%20%7C%20Power%20BI%20%7C%20Tableau-blue)](#tech-stack--workflow)
 [![Case Study](https://img.shields.io/badge/Google%20Analytics-Capstone-orange)](#business-context--core-problem)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
