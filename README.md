@@ -1,75 +1,66 @@
-# Bellabeat Consumer  Wellness Analytics: Smart Device Usage Case Study
+### Bellabeat Consumer Wellness Analytics
 
-## Executive Summary 
-Bellabeat manufactures high-tech, design-focused health trackers tailored for women. This analysis investigate non-Bellabeat smart wearable biometric telemetry to identify consumer activity patterns, rest behaviours and weekly adherence drops. Findings directly inform the go-to-market and retention strategy for the **Bellabeat Leaf** tracker and the **Bellabeat App** ecosystem.
+```markdown
+# Bellabeat Consumer Wellness Analytics: Smart Device Usage Case Study
 
-### Key Analytical Takeways
-* **Sedentary Overload:** Tracked individual spend an average of **995 minutes (~16.6 hours)** of their waking day inactive.
-* **The Sleep Latency Gap:** Users average **419 minutes (~7.0 hours)** of sleep per night, but spend an average of **39.2 minutes** in bed awake/restless before falling asleep.
-* **The Weekend Slump:** Pysical activity drop significantly between Friday and Sunday, with step counts and high-intensity minutes reaching their lowest level on Sunday.
-
----
-
-## Business Context & Core Questions
-* **client / Stakeholder:** Urška Sršen (Chief Creative Officer) & Sando Mur (Co-founder, Mathematician).
-* **Target Product:** Bellabeat Leaf (smart wellness tracker) & Bellabeat App.
-
-### Guiding Business Questions
-1. What behavioural trends characterize consumer smart device usage?
-2. How do these activity patterns map to Bellabeat's core customer persona?
-3. How can data-backed insights optimize Bellabeat's marketing & engagement strategy?
+[![Tools](https://img.shields.io/badge/Tools-Excel%20%7C%20MySQL%20%7C%20Python%20%7C%20Power%20BI-blue)](#tech-stack--workflow)
+[![Case Study](https://img.shields.io/badge/Google%20Analytics-Capstone-orange)](#business-context--core-problem)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
-## Tech Stack & Methodology
-* **Excel:** Initial data validation, parsing timestamps, removing duplicates, and calculating baseline columns.
-* **MySQL:** Relational schema design, aggregations (`AVG`, `SUM`, `COUNT`) and user segmentation logic using `CASE WHEN`.
-* **Python (Pandas, Numpy, Seaborn, Matplotlib):** Exploratory data analysis, missing-value audits and correlation analysis.
-* **Power BI & Tableau:** Interactive executive dashbords, KPI scorecards and cross-metric trend visualizations.
+## Executive Summary
+Bellabeat manufactures high-tech, design-focused health trackers tailored for women. This analysis investigates non-Bellabeat smart wearable biometric telemetry to identify consumer activity patterns, rest behaviors, and weekly adherence drops. Findings directly inform the product positioning and retention strategy for the **Bellabeat Leaf** tracker and the **Bellabeat App** ecosystem.
+
+### Key Performance Indicators
+* **Sedentary Overload:** Users spend an average of **995 minutes (~16.6 hours)** of waking time inactive.
+* **Sleep Latency Gap:** Users average **419 minutes (~7.0 hours)** of sleep per night, but spend **39.2 minutes** in bed awake/restless.
+* **Weekend Slump:** Physical activity drops significantly between Friday and Sunday, with step counts bottoming out on Sunday.
 
 ---
 
-## Data Sources & ROCCC Evaluation
-* **Dataset:** [FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit) (Mobius via Kaggle, CC0: Public Domain).
-* **Sample Size:** 35 daily activity respondents (457 daily records) and 24 sleep respondents (410 duplicated reports).
-* **Limitations (ROCCC Assessment):** 
-  * **Sample Size & Demographics:** Small sample size without gender stratification requires cautious generalization for female-specific wellness positioning.
-  * **Time Horizon:** Telemetry is bounded to a 30-day tracking window in March-May 2016.
+## Business Context & Core Problem
+Leadership seeks to identify how consumers utilize non-Bellabeat smart fitness devices to optimize product features and digital engagement for Bellabeat's target audience.
+
+* **Primary Business Questions:**
+  1. What behavioral trends characterize consumer smart device usage?
+  2. How do these activity patterns map to Bellabeat’s core customer persona?
+  3. How can data-backed insights optimize Bellabeat's marketing and engagement strategy?
 
 ---
 
-## Key Data Insights & Analytical Findings 
-
-### 1. Daily Movement Tiers 
-Users were classified into standardized physical health segments based on daily volume:
-* **Sedentary (<5,000 steps):** ~37% of recorded days.
-* **Low/Moderate (5,000-9,999 steps):** ~43% of recorded days.
-* **Highly Active (10,000+ steps):** ~20% of recorded days.
-
-### 2. Time-in-Bed vs. Minutes Asleep
-A linear correlation ($r = 0.91$) confirms consistency between bedtime and sleep duration, but highlighted persistent restlessness (average sleep latency of ~40 minutes per night).
+## Tech Stack & Workflow
+* **Microsoft Excel:** Initial data validation, parsing timestamps, deduplication, and baseline feature extraction.
+* **MySQL:** Relational schema creation, aggregations (`AVG`, `SUM`, `COUNT`), and user segmentation logic using `CASE WHEN`.
+* **Python (Pandas, NumPy, Matplotlib, Seaborn):** Exploratory data analysis, missing-value audits, and correlation matrices.
+* **Power BI & Tableau:** Interactive dashboards, KPI scorecards, and day-of-week trend visualizations.
 
 ---
 
-## Executive Power BI Dashboard
-![Executive Overview Dashboard](https://1drv.ms/i/c/ebe8770aa4d59fbb/IQAQW7tsX2d9TKrKnd5p9NKuAbfqn-Vx90GoJO3-JxUANPY?e=WLBH92)
-
-### Dashboard Design Principles:
-* **KPI Scorecards:** Instant visibility into Average Daily Steps, Sedentary Hours, and Nightly Rest.
-* **Weekly Heatmap / Trend Matrix:** Day-of-Week drop off detection with chronological Monday-Sunday sorting.
-* **Interactive Slicers:** Filter dynamic metrics by User Activity Segment and Day Classification (Weekday vs. Weekend).
+## Key Analytical Insights
+* **Movement Distribution:** Approximately **37%** of recorded user days are categorized as Sedentary (<5,000 steps), **43%** as Low/Moderate (5,000–9,999 steps), and only **20%** as Highly Active (10,000+ steps).
+* **Restless Sleep Latency:** While bed duration and total sleep show strong correlation ($r = 0.91$), users spend nearly 40 minutes per night tossing and turning before reaching deep rest.
+* **The Weekend Activity Dip:** Step counts and active minutes decline sharply starting Friday afternoon, indicating a breakdown in daily health tracking routines over weekends.
 
 ---
 
-## Top Three Strategic Recommendations (ACT Phase)
-1. **Reposition the Leaf as an Inactivity Disruptor**
-   * *Insight:* Users spend 16.6 waking hours sitting down.
-   * *Execution:* Promote the Bellabeat Leaf's gentle vibration alerts as a daily anti-sedentary reminder, encouraging regular desk breaks and posture resets during work hours.
+## Strategic Recommendations
+1. **Reposition the Leaf as an Inactivity Disruptor:** Promote the Bellabeat Leaf’s gentle vibration alerts as a daily anti-sedentary reminder, encouraging regular desk breaks during workday hours.
+2. **Deploy "Smart Wind-Down" In-App Guides:** Trigger automated notifications 45 minutes prior to scheduled bedtimes through the Bellabeat App, paired with guided breathing routines to cut down sleep latency.
+3. **Incentivize Weekend Consistency via Gamification:** Introduce weekend streak challenges within the app, rewarding users who maintain target step counts from Friday to Sunday with loyalty perks.
 
-2. **Deploy "Smart Wind-Down" In-App Guides**
-   * *Insight:* Consumers average ~40 minutes restless in bed before falling asleep.
-   * *Execution:* Trigger automated notifications 45 minutes prior to scheduled bedtimes through the Bellabeat App, paired with guided mindfullness audio and breathing routines to improve sleep readiness.
+---
 
-3. **Incentivize Weekend Consistency via Gamification**
-   * *Insight:* Activity levels consistently drop on weekends, with lowest numbers on Sunday.
-   * *Execution:* Introduce weekend streak challenges within the Bellabeat App. Rewarding users who hit their step and sleep targets from Friday to Sunday with loyalty perks or membership credits builds seven-day engagement.
+## Repository Structure
+```text
+├── data/
+│   └── fitbit_daily_activity.csv     # Cleaned telemetry dataset
+├── sql/
+│   └── bellabeat_transformations.sql # Data cleaning & segmentation queries
+├── python/
+│   └── bellabeat_eda.ipynb           # Python notebooks for EDA and correlations
+├── pbix/
+│   └── bellabeat_dashboard.pbix      # Power BI dashboard file
+├── docs/
+│   └── executive_overview.png        # High-resolution dashboard screenshot
+└── README.md
